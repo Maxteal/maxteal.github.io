@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/ico.png">
+    <link rel="shortcut icon" href="assets/ico.png">
+    <title>Shreyas 'Shreyas-ITB'</title>
+    <meta name="apple-mobile-web-app-title" content="Shreyas 'Shreyas-ITB'">
+    <meta name="application-name" content="Shreyas 'Shreyas-ITB'">
+    <meta name="twitter:title" content="Shreyas 'Shreyas-ITB'">
+    <meta property="og:title" content="Shreyas 'Shreyas-ITB'">
+    <meta name="description" content="A 16 year old Developer and Co-founder.">
+    <meta name="twitter:description" content="A 16 year old Developer and Co-founder.">
+    <meta property="og:description" content="A 16 year old Developer and Co-founder.">
+    <meta name="keywords" content="Shreyas, Shreyas-ITB, ShreyasBrilliant, Shrey, ShreyasDev, Siri, SiriCoin, sc, SC, siricoin">
+    <meta name="author" content="revox from the Duino-Coin Team">
+    <meta property="og:url" content="https://Shreyas-ITB.github.io">
+    <meta name="msapplication-TileColor" content="#27ae60">
+    <meta name="theme-color" content="#27ae60">
+    <meta name="twitter:site" content="@Shreyas_Brilliant">
+    <meta name="twitter:image" content="assets/banner.png">
+    <meta property="og:image" content="assets/banner.png">
+    <meta property="og:image:url" content="assets/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://wallet.duinocoin.com/css/bulma-prefers-dark.min.css" type="text/css">
+    <script src="assets/fontawesome.js"></script>
+    <style>
+    .link {
+        color: #fc606f;
+        text-decoration: none;
+        background-image: linear-gradient(90deg, #fc606f, #ff7660, #fca643);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 0% 2px;
+        transition: background-size 400ms ease-in-out;
+        transition: 0.5s;
+    }
+
+    .link:hover {
+        color: #fc3888;
+        background-size: 100% 2px;
+    }
+
+    .social {
+        color: #fc606f;
+    }
+
+    #nick_container {
+        height: 1.3em;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .rotate,
+    .social {
+        transition: all 0.2s ease-in-out 0s;
+    }
+
+    .rotate:hover {
+        cursor: default;
+        transform: rotate(360deg);
+        transition: all 0.5s ease-in-out 0s;
+
+    }
+
+    #nick {
+        float: right;
+        display: inline-block;
+        animation: popin 2s ease-in-out infinite;
+        color: #fc7c54;
+    }
+
+    #age {
+        color: #ff5775;
+    }
+
+    #siricoinlink {
+        color: #ff5775;
+    }
+
+    .container {
+        position: relative;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    .container .box {
+        position: relative;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        width: 430px;
+        height: 178px;
+        align-self: center;
+        text-align: justify;
+        background: linear-gradient(90deg, #fc606f, #ff7660, #fca643);
+        font-family: consolas;
+        display: flex;
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .box.cadbox {
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        background: linear-gradient(90deg, #fc606f, #ff7660, #fca643);
+        border-radius: 15px;
+        opacity: 1;
+        box-shadow: -15px -15px 15px #fc606f,
+        15px 15px 15px #fca643,
+        inset -5px -5px 5px rgba(202, 176, 176, 0.2),
+        inset 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .imgshadow {
+        -webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.6));
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
+    }
+
+    .lightshadow {
+        -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.2));
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#222')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#222')";
+    }
+
+    
+
+    p {
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (prefers-color-scheme: light) {
+        html {
+            background-color: #FBF7F4;
+        }
+
+        .heading {
+            color: #1e272e;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .heading {
+            color: #fbfbfb;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        html {
+            zoom: 1.35;
+        }
+
+        .avatar {
+            margin-left: auto !important;
+        }
+    }
+
+    .heading {
+        margin-bottom: 0.5em !important;
+    }
+
+    /* For Chrome or Safari */
+    progress::-webkit-progress-bar {
+        background-color: #eeeeee;
+    }
+
+    progress::-webkit-progress-value {
+        background-color: #fc606f !important;
+    }
+
+
+    /* For Firefox */
+    progress {
+        background-color: #eee;
+    }
+
+    progress::-moz-progress-bar {
+        background-color: #fc606f !important;
+    }
+
+    /* For IE10 */
+    progress {
+        background-color: #eee;
+    }
+
+    progress {
+        background-color: #fc606f;
+    }
+
+    @keyframes popin {
+
+        0%,
+        30% {
+            transform: translate(0px, 0px);
+        }
+
+        40%,
+        90% {
+            transform: translate(0px, -1.5em);
+            color: #fc7c54;
+        }
+    }
+
+    @-moz-keyframes rotate {
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes rotate {
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotate {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    .avatarbox {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        width: 138px;
+        height: 138px;
+        margin-left: -10%;
+        top: 0%;
+        overflow: hidden;
+    }
+
+    .avatarbox::before {
+        content: '';
+        position: absolute;
+        inset: -10px 40px;
+        background: linear-gradient( #fc606f, #fc7c54, #ff7660, #fc2495, #fc3888, #fb9052, #fca643);
+        transition: 0.5s;
+        animation: animate 4s linear infinite;
+    }
+
+    .avatarbox:hover::before {
+        inset: -20px 0px;
+    }
+
+    @keyframes animate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    .avatarbox::after {
+        content: '';
+        position: absolute;
+        inset: 3px;
+        background: #15151b;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .avatarcontent {
+        position: absolute;
+        inset: 5px;
+        border: 2px solid #15151b;
+        z-index: 3;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .avatarcontent img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 3;
+    }
+
+    .avatarbox:hover .avatarcontent img {
+        opacity: 0;
+    }
+
+    .avatarcontent a {
+        position: relative;
+        background: linear-gradient(315deg, #fc606f, #ff7660, #fca643);
+        color: #FBF7F4;
+        border-radius: 25px;
+        padding: 4px 2px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        transition: 0.5s;
+        font-size: 0.7em;
+    }
+
+    .avatarcontent a:hover {
+        letter-spacing: 0.2em;
+    }
+
+    .footerclass{
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    }
+
+    .acontent1 {
+        padding-top: 25px;
+        margin-left: 100px;
+    }
+
+    .acontent2 {
+        padding: auto;
+        margin-left: 100px;
+    }
+
+    </style>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered is-vcentered">
+                <div class="column has-text-right">
+                    <div class="columns is-multiline is-centered">
+                        <div class="column is-full">
+                            <figure class="image is-128x128 avatar">
+                                <div class="avatarbox">
+                                    <div class="avatarcontent">
+                                        <img src="assets/Shreyas.jpg">
+                                        <a href="https://github.com/Shreyas-ITB">Github profile</a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="columns is-multiline is-centered">
+                        <div class="column is-full">
+                            <div>
+                                <p class="heading mb-0"><b>Hello!</b>, I'm</p>
+                                <p class="title"><b>Shreyas</b> <span class="has-text-weight-light">Infotechbros</span></p>
+                                <p class="subtitle">
+                                    <div id="nick_container">
+                                        also known as <b>Shreyas</b>
+                                        <span class="has-text-weight-light" id="nick">-ITB<br>Brilliant</span>
+                                    </div>
+                                </p>
+                                <div class="content">
+                                    <a href="https://github.com/Shreyas-ITB" class="social lightshadow">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a href="https://www.instagram.com/_siricoin/" class="social lightshadow">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a href="https://www.youtube.com/c/Infotechbros/" class="social lightshadow">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a href="https://discordapp.com/users/859368295823835136" class="social lightshadow">
+                                        <i class="fab fa-discord"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a href="https://twitter.com/Siri_Coin" class="social lightshadow">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a href="https://t.me/SiriCoinCommunity" class="social lightshadow">
+                                        <i class="fab fa-telegram"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a href="https://www.reddit.com/user/Shreyas_Brilliant" class="social lightshadow">
+                                        <i class="fab fa-reddit"></i>
+                                    </a>
+                                    &nbsp;
+                                    <a href="mailto:shreyasbrillint@ShreyasITB.dev" class="social lightshadow">
+                                        <i class="fa fa-at"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns mb-0 mt-3 is-gapless">
+                <div class="column"></div>
+                <div class="column has-text-right-desktop mr-5">
+                    <div class="columns is-multiline is-centered">
+                        <div class="column is-full">
+                            <div>
+                                <p class="heading mb-0 is-size-6">ABOUT <b>ME</b></p>
+                                <div class="content">
+                                    I'm a(n) <b id="age"></b> year old Co-founder, Developer and also a student living in <b>Banglore</b>, <b>Karnataka</b>, <b>India</b>. I finished schooling in 2022 and currently persuing PreUniversity of <b>Banglore</b>. Im a Co-founder and Developer of <b id="siricoinlink">SiriCoin CryptoCurrency</b>. Passionate about new <b>technologies and trends</b>. Would like to <b>explore and try out new things</b>!!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-full">
+                            <div>
+                                <p class="heading mb-0 is-size-6"><b>LANGUAGES</b> I KNOW</p>
+                                <div class="columns is-multiline">
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>Python 3</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="95" max="100">95%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>HTML</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="90" max="100">90%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>JavaScript</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="80" max="100">80%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>CSS</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="75" max="100">75%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>C, C++</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="50" max="100">50%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>TypeScript</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="25" max="100">25%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>Golang</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="15" max="100">15%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>Java</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="9" max="100">9%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <div class="column is-full">
+                                        <div class="columns is-mobile">
+                                            <div class="column">
+                                                <span>C#</span>
+                                            </div>
+                                            <div class="column">
+                                                <progress class="progress is-success mt-1" value="4" max="100">4%</progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="columns is-multiline is-centered">
+                        <div class="column is-full">
+                            <p class="heading mb-0 is-size-6"><b>Projects</b> I've made</p>
+                            <div class="columns is-multiline">
+                                <div class="column is-full">
+                                    <img class="icon icon-text lightshadow rotate" src="assets/ico.png">
+                                    <a class="link" href="https://siricoin.org">
+                                        SiriCoin Website
+                                    </a>
+                                    - a <b>Super Cool</b> website for a low powered crypto currency that i own <small class="has-text-grey">2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <img class="icon icon-text lightshadow rotate" src="assets/ico.png">
+                                    <a class="link" href="https://docs.siricoin.org">
+                                        SiriCoin Docs
+                                    </a>
+                                    - a good looking <b>eco-friendly</b> Documents website for SiriCoin made using Docusaurus <small class="has-text-grey">2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <img class="icon icon-text lightshadow rotate" src="assets/Siri.png">
+                                    <a class="link" href="https://github.com/siricoin-project/mainnet">
+                                        SiriCoin Mainnet
+                                    </a>
+                                    - an awesome piece of software that <b>keeps SiriCoin alive</b> - the mainnet of SiriCoin <small class="has-text-grey">2021-2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <img class="icon icon-text lightshadow rotate" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png">
+                                    <a class="link" href="https://github.com/siricoin-project/SiriBridger">
+                                        SiriBridger
+                                    </a>
+                                    - a bridge bot between <b>SiriCoin Discord and Telegram communities</b>, a very helpful bot <small class="has-text-grey">2021-2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <img class="icon icon-text lightshadow rotate" src="https://avatars.githubusercontent.com/u/11053411?s=200&v=4">
+                                    <a class="link" href="https://github.com/Shreyas-ITB/Minecraft-Bot">
+                                        Minecraft-Bot
+                                    </a>
+                                    - a <b>Highly capable</b> minecraft bot which is able to equip armours eat food and even <b>guard you the whole time </b> <small class="has-text-grey">2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <img class="icon icon-text lightshadow rotate" src="https://avatars.githubusercontent.com/u/1525981?s=200&v=4">
+                                    <a class="link" href="https://github.com/Shreyas-ITB/SiriCoinGUI-Wallet">
+                                        SiriCoin GUI Wallet
+                                    </a>
+                                    - a <b>Modern Tkinter</b> GUI Wallet application for SiriCoin <small class="has-text-grey">2021-2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <img src="assets/ico.png" class="icon icon-text lightshadow rotate">
+                                    <a class="link" href="https://github.com/Shreyas-ITB/Siri-Bot">
+                                        Siri-Bot
+                                    </a>
+                                    - A great discord bot which awards coins for users <small class="has-text-grey">2021-2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <span class="icon icon-text lightshadow rotate">🏠</span>
+                                    <a class="link" href="https://github.com/Shreyas-ITB/ESP8266-GPS-LocationTracker">
+                                        ESP8266 GPS Location Logger/Tracker
+                                    </a>
+                                    - a very handy ESP8266 GPS location Tracker/Logger <small class="has-text-grey">2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <img src="https://avatars.githubusercontent.com/u/38958958?s=200&v=4" class="icon icon-text lightshadow rotate">
+                                    <a class="link" href="https://github.com/Shreyas-ITB/UltimateVerusMiner">
+                                        UltimateVerusMiner
+                                    </a>
+                                    - a (WIP!) simple yet amazing VerusCoin Miner made for verus community <small class="has-text-grey">2022</small>
+                                </div>
+                                <div class="column is-full">
+                                    <img src="assets/ico.png" class="icon icon-text lightshadow rotate">
+                                    <a class="link" href="https://github.com/Shreyas-ITB/SiriCoinPCMiner">
+                                        SiriCoin PCMiner
+                                    </a>
+                                    - a profitable PCMiner for SiriCoin <small class="has-text-grey">2021-2022</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-full">
+                            <div>
+                                <p class="heading mb-0 is-size-6">SOME PROJECTS I'VE <b>CONTRIBUTED</b> TO</p>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <a class="link" href="https://verus.io">
+                                                VerusCoin
+                                            </a> - an amazing CPU Mineable coin
+                                        </li>
+                                        <li>
+                                            <a class="link" href="">
+                                                SiriCoin AVRMiner
+                                            </a> - a cool software that allows users to mine SiriCoin with AVR Boards
+                                        </li>
+                                        <li>
+                                            <a class="link" href="https://github.com/Shreyas-ITB/SiriCoin-DiscordThemes">
+                                                BetterDiscord SiriCoin Theme
+                                            </a> - A cool organisation that wants to make discord look modern and fresh
+                                        </li>
+                                        <li>
+                                            <a class="link" href="https://github.com/Shreyas-ITB/Ridimuim-SiricoinMiners">
+                                                Ridimuim's SiriCoin Miners
+                                            </a> - A very cool miners with lots of features for SiriCoin
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column"></div>
+            </div>
+            <div class="columns is-gapless mt-5">
+                <div class="column has-text-right-desktop">
+                    <div class="columns is-multiline is-centered">
+                        <div class="column is-full mr-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box cadbox">
+                    <div class="acontent1">
+                        <script type="text/javascript">
+                            atOptions = {
+                                'key' : 'db4b33c23cf8682ce15892a429bfa1ce',
+                                'format' : 'iframe',
+                                'height' : 60,
+                                'width' : 468,
+                                'params' : {}
+                            };
+                            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/db4b33c23cf8682ce15892a429bfa1ce/invoke.js"></scr' + 'ipt>');
+                        </script>
+                    </div>
+                    <div class="acontent2">
+                        <script type="text/javascript">
+                            atOptions = {
+                                'key' : 'db4b33c23cf8682ce15892a429bfa1ce',
+                                'format' : 'iframe',
+                                'height' : 60,
+                                'width' : 468,
+                                'params' : {}
+                            };
+                            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitabledisplayformat.com/db4b33c23cf8682ce15892a429bfa1ce/invoke.js"></scr' + 'ipt>');
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <footer class="footerclass">
+                <p class="title is-size-6 mb-0">
+                    If you're using an <b class="has-text-danger-dark">Adblocker</b> 😞
+                    <span class="has-text-weight-bold">
+                        then please whitelist this website, because its the only source of income for me. <b class="has-text-success-dark">Which helps me keep my projects alive and also helps me to continue my hobby Thanks!</b>.
+                    </span>
+                </p>
+            </footer>
+        </div>
+    </section>
+</body>
+
+<script>
+const day = 24 * 60 * 60 * 1000;
+const age = document.getElementById("age");
+
+round_to = function(precision, value) {
+    value = parseFloat(value);
+    power_of_ten = 10 ** precision;
+    return Math.round(value * power_of_ten) / power_of_ten;
+}
+
+day_diff = function(d1, d2) {
+    return (d2 - Date.parse(d1)) / day;
+}
+
+function update_age() {
+    age.innerHTML = round_to(8, day_diff('May 2, 2006 12:00:00', new Date()) / 365);
+}
+
+update_age();
+setInterval(function() {
+    update_age();
+}, 100)
+</script>
+
+</html>
